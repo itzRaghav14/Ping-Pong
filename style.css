@@ -1,0 +1,116 @@
+/* Animating the background color */
+
+@keyframes changeColors {
+  from {
+    background: rgb(255, 0, 0);
+  }
+  12% {
+    background: rgb(255, 204, 0);
+  }
+  25% {
+    background: rgb(89, 255, 0);
+  }
+  37% {
+    background: rgb(0, 255, 89);
+  }
+  50% {
+    background: rgb(0, 229, 255);
+  }
+  62% {
+    background: rgb(0, 136, 255);
+  }
+  75% {
+    background: rgb(255, 0, 212);
+  }
+  87% {
+    background: rgb(255, 0, 119);
+  }
+  to {
+    background: rgb(255, 0, 0);
+  }
+}
+
+.bg-custom-animation {
+  animation: changeColors 10s infinite alternate;
+}
+
+/* A few adjustments */
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Utility Classes */
+
+.text-center {
+  text-align: center;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.p-8 {
+  padding: 2rem /* 32px */;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bg-white {
+  background-color: rgb(255 255 255);
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.-translate-x-1\/2 {
+  transform: translate(-50%);
+}
+
+.top-4 {
+  top: 1rem /* 16px */;
+}
+
+.bottom-8 {
+  bottom: 2rem /* 32px */;
+}
+
+.bottom-4 {
+  bottom: 1rem /* 16px */;
+}
+
+.w-48 {
+  width: 12rem /* 192px */;
+}
+
+.w-4 {
+  width: 1rem /* 16px */;
+}
+
+.h-4 {
+  height: 1rem /* 16px */;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
